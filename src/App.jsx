@@ -8,6 +8,9 @@ import Cart from './pages/Cart'
 import Favorites from './pages/Favorites'
 import ProductDetails from './pages/ProductDetails'
 import Products from './pages/Products'
+import Admin from './pages/Admin'
+import { Login, Register } from './pages/Auth'
+import { products as initialProducts } from './data/products'
 
 function readStorage(key, fallback) {
   try { return JSON.parse(localStorage.getItem(key)) || fallback } catch { return fallback }
@@ -16,11 +19,14 @@ function readStorage(key, fallback) {
 export default function App() {
   const [cart, setCart] = useState(() => readStorage('techmarket-cart', []))
   const [favorites, setFavorites] = useState(() => readStorage('techmarket-favorites', []))
+  const [adminProducts, setAdminProducts] = useState(() => readStorage('techmarket-admin-products', initialProducts))
   useEffect(() => localStorage.setItem('techmarket-cart', JSON.stringify(cart)), [cart])
   useEffect(() => localStorage.setItem('techmarket-favorites', JSON.stringify(favorites)), [favorites])
+  useEffect(() => localStorage.setItem('techmarket-admin-products', JSON.stringify(adminProducts)), [adminProducts])
   const addToCart = (product) => setCart((current) => { const existing = current.find((item) => item.id === product.id); return existing ? current.map((item) => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item) : [...current, { ...product, quantity: 1 }] })
   const toggleFavorite = (productId) => setFavorites((current) => current.includes(productId) ? current.filter((id) => id !== productId) : [...current, productId])
   const updateQuantity = (productId, change) => setCart((current) => current.map((item) => item.id === productId ? { ...item, quantity: item.quantity + change } : item).filter((item) => item.quantity > 0))
   const removeFromCart = (productId) => setCart((current) => current.filter((item) => item.id !== productId))
-  return <BrowserRouter><div className="app-shell"><Navbar cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} favoriteCount={favorites.length} /><Routes><Route path="/" element={<Home onAddToCart={addToCart} onToggleFavorite={toggleFavorite} favorites={favorites} />} /><Route path="/products" element={<Products onAddToCart={addToCart} onToggleFavorite={toggleFavorite} favorites={favorites} />} /><Route path="/products/:id" element={<ProductDetails onAddToCart={addToCart} onToggleFavorite={toggleFavorite} favorites={favorites} />} /><Route path="/cart" element={<Cart cart={cart} onUpdateQuantity={updateQuantity} onRemove={removeFromCart} onClear={() => setCart([])} />} /><Route path="/favorites" element={<Favorites favorites={favorites} onAddToCart={addToCart} onToggleFavorite={toggleFavorite} />} /><Route path="*" element={<Home onAddToCart={addToCart} onToggleFavorite={toggleFavorite} favorites={favorites} />} /></Routes><Footer /></div></BrowserRouter>
+  const saveProduct = (product) => setAdminProducts((current) => current.some((item) => item.id === product.id) ? current.map((item) => item.id === product.id ? product : item) : [...current, product])
+  return <BrowserRouter><div className="app-shell"><Navbar cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} favoriteCount={favorites.length} /><Routes><Route path="/" element={<Home onAddToCart={addToCart} onToggleFavorite={toggleFavorite} favorites={favorites} />} /><Route path="/products" element={<Products onAddToCart={addToCart} onToggleFavorite={toggleFavorite} favorites={favorites} />} /><Route path="/products/:id" element={<ProductDetails onAddToCart={addToCart} onToggleFavorite={toggleFavorite} favorites={favorites} />} /><Route path="/cart" element={<Cart cart={cart} onUpdateQuantity={updateQuantity} onRemove={removeFromCart} onClear={() => setCart([])} />} /><Route path="/favorites" element={<Favorites favorites={favorites} onAddToCart={addToCart} onToggleFavorite={toggleFavorite} />} /><Route path="/login" element={<Login onLogin={(user) => localStorage.setItem('techmarket-user', JSON.stringify(user))} />} /><Route path="/register" element={<Register onLogin={() => {}} />} /><Route path="/admin" element={<Admin products={adminProducts} onSave={saveProduct} onDelete={(id) => setAdminProducts((current) => current.filter((product) => product.id !== id))} />} /><Route path="*" element={<Home onAddToCart={addToCart} onToggleFavorite={toggleFavorite} favorites={favorites} />} /></Routes><Footer /></div></BrowserRouter>
 }

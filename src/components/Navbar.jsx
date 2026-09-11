@@ -21,7 +21,7 @@ export default function Navbar({ cartCount, favoriteCount }) {
           <Link className="icon-button" to="/products" aria-label="Search products"><Search size={19} /></Link>
           <Link className="icon-button action-with-count" to="/favorites" aria-label="Favorites"><Heart size={19} /><small>{favoriteCount}</small></Link>
           <Link className="icon-button action-with-count" to="/cart" aria-label="Shopping cart"><ShoppingBag size={19} /><small>{cartCount}</small></Link>
-          <Link className="account-link" to="/login"><UserRound size={18} /> <span>Account</span></Link>
+          <Link className="account-link" to="/login"><UserRound size={18} /> <span>accщгте</span></Link>
         </div>
       </nav>
     </header>

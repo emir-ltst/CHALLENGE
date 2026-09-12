@@ -2,6 +2,7 @@ import { ArrowRight, Headphones, Laptop, ShieldCheck, Smartphone, Truck, Watch }
 import { Link } from 'react-router-dom'
 import { categories, products } from '../data/products'
 import ProductCard from '../components/ProductCard'
+import Claculate from '../components/Claculate'
 
 export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
   const featuredProducts = products.slice(0, 4)

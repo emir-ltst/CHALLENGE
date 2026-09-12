@@ -8,9 +8,7 @@ const Claculate = () => {
     function handclick(value){
         setResult(result + value)
     }
-    }
-
-
+    
     const calculate = () =>{
         try {
             setResult(eval(result.toString()))
@@ -18,6 +16,9 @@ const Claculate = () => {
             setRezult(err)
         }
     }
+    }
+
+
 
     const clear= ()=>{
         setResult("")
@@ -26,7 +27,7 @@ const Claculate = () => {
     <div className="calculator">
         <input type="text"
         value={result}
-        readonly
+        readOnly
         />
 
         <section className="btn">

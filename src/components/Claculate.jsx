@@ -30,10 +30,10 @@ const Claculate = () => {
         />
 
         <section className="btn">
-            <button>C</button>
-            <button>-</button>
-            <button>+</button>
-            <button>*</button>
+            <button onClick={clear}>C</button>
+            <button onClick={()=> handclick("-")}>-</button>
+            <button onClick={()=> handclick("+")}>+</button>
+            <button onClick={()=> handclick("*")}>*</button>
 
             <button>/</button>
             <button>7</button>

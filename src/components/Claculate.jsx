@@ -45,10 +45,10 @@ const Claculate = () => {
             <button onClick={()=> handclick("5")}>5</button>
             <button onClick={()=> handclick("6")}>6</button>
 
-            <button>0</button>
-            <button>1</button>
-            <button>2</button>
-            <button>=</button>
+            <button onClick={()=> handclick("0")}>0</button>
+            <button onClick={()=> handclick("1")}>1</button>
+            <button onClick={()=> handclick("2")}>2</button>
+            <button onClick={calculate}>=</button>
 
         </section>
     </div>

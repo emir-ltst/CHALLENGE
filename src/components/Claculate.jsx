@@ -28,6 +28,28 @@ const Claculate = () => {
         value={result}
         readonly
         />
+
+        <section className="btn">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+
+            <button></button>
+            <button></button>
+            <button></button>
+
+        </section>
     </div>
   )
 }

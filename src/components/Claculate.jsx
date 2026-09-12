@@ -2,8 +2,10 @@ import React from 'react'
 import useState from 'react'
 
 const Claculate = () => {
-    function Calculutor() {
     const [result, setResult] = useState("")
+
+    function Calculutor() {
+    
 
     function handclick(value){
         setResult(result + value)

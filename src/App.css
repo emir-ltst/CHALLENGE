@@ -44,3 +44,7 @@ button {
     margin: 5px;
     padding: 10px;
 }
+input {
+    width: 145px;
+    margin: 8px;
+}

@@ -6,7 +6,7 @@ const Claculate = () => {
     const [result, setResult] = useState("")
 
     function handclick(value){
-        setRESULT(result + value)
+        setResult(result + value)
     }
     }
 
@@ -17,6 +17,10 @@ const Claculate = () => {
         } catch (err) {
             setRezult(err)
         }
+    }
+
+    const clear= ()=>{
+        setResult("")
     }
   return (
     <div>

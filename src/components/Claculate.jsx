@@ -23,8 +23,11 @@ const Claculate = () => {
         setResult("")
     }
   return (
-    <div>
-
+    <div className="calculator">
+        <input type="text"
+        value={result}
+        readonly
+        />
     </div>
   )
 }

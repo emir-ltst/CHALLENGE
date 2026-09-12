@@ -40,10 +40,10 @@ const Claculate = () => {
             <button onClick={()=> handclick("8")}>8</button>
             <button onClick={()=> handclick("9")}>9</button>
 
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
+            <button onClick={()=> handclick("3")}>3</button>
+            <button onClick={()=> handclick("4")}>4</button>
+            <button onClick={()=> handclick("5")}>5</button>
+            <button onClick={()=> handclick("6")}>6</button>
 
             <button>0</button>
             <button>1</button>

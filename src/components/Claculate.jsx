@@ -80,7 +80,7 @@ export default function Claculate() {
       setResult((current) => evaluateExpression(current))
       setError(false)
     } catch {
-      setResult('Ошибка')
+      setResult('ERROR')
       setError(true)
     }
   }
@@ -102,6 +102,7 @@ export default function Claculate() {
   return <div className={`calculator ${error ? 'has-error' : ''}`}>
     <div className="calculator-heading"><span>TM // CALC</span><small>ONLINE</small></div>
     <input className="calculator-display" type="text" value={result} placeholder="0" readOnly aria-label="Calculator display" />
+    {error && <p className="calculator-error" role="alert">Invalid expression. Press C to reset.</p>}
     <section className="calculator-buttons">
       <button onClick={clear}>C</button><button onClick={backspace} aria-label="Backspace">DEL</button><button onClick={() => append('(')}>(</button><button onClick={() => append(')')}>)</button>
       <button onClick={() => append('7')}>7</button><button onClick={() => append('8')}>8</button><button onClick={() => append('9')}>9</button><button onClick={() => append('/')}>/</button>

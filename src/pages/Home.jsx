@@ -1,12 +1,9 @@
-import { ArrowRight, Calculator, Headphones, Laptop, ShieldCheck, Smartphone, Truck, Watch, X } from 'lucide-react'
+import { ArrowRight, Headphones, Laptop, ShieldCheck, Smartphone, Truck, Watch } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 import { categories, products } from '../data/products'
 import ProductCard from '../components/ProductCard'
-import Claculate from '../components/Claculate'
 
 export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
-  const [calculatorOpen, setCalculatorOpen] = useState(false)
   const featuredProducts = products.slice(0, 4)
   const categoryIcons = { Smartphones: Smartphone, Laptops: Laptop, Audio: Headphones, Wearables: Watch }
   return <main className="home-page">
@@ -15,6 +12,5 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
     <section className="section container home-categories"><div className="section-heading"><div><p className="eyebrow">01 / NAVIGATE</p><h2>Find your next favorite.</h2></div><Link className="text-link" to="/products">View all <ArrowRight size={16} /></Link></div><div className="category-grid">{categories.map((category, index) => { const Icon = categoryIcons[category.name] || Smartphone; return <Link className="category-card" to={`/products?category=${category.name}`} key={category.id}><span className="category-index">0{index + 1}</span><img src={category.image} alt={category.name} /><div className="category-overlay"><Icon size={20} /><h3>{category.name}</h3><span>{category.description}</span></div></Link> })}</div></section>
     <section className="section featured-section"><div className="container"><div className="section-heading"><div><p className="eyebrow">THE SHORTLIST</p><h2>Popular right now.</h2></div><Link className="text-link" to="/products">Shop all products <ArrowRight size={16} /></Link></div><div className="product-grid">{featuredProducts.map((product) => <ProductCard key={product.id} product={product} onAddToCart={onAddToCart} onToggleFavorite={onToggleFavorite} isFavorite={favorites.includes(product.id)} />)}</div></div></section>
     <section className="why-section" id="why-us"><div className="container why-grid"><div className="why-intro"><p className="eyebrow">02 / THE PROTOCOL</p><h2>Good products.<br /><em>Good practice.</em></h2><p className="why-note">We keep the signal clean: fewer objects, better decisions, and support that stays human.</p><div className="why-readout"><span>TRUST INDEX</span><strong>98.4</strong><small>/ 100</small></div></div><div className="feature-list"><div><span className="feature-number">01</span><Truck /><span><strong>Fast, careful delivery</strong><small>Free shipping over $75, always tracked.</small></span></div><div><span className="feature-number">02</span><ShieldCheck /><span><strong>Quality, guaranteed</strong><small>Every product is checked and backed by us.</small></span></div><div><span className="feature-number">03</span><Headphones /><span><strong>Real human support</strong><small>Friendly advice from people who know tech.</small></span></div></div></div><div className="container why-signal"><span>PROTOCOL ACTIVE</span><i></i><span>NO HIDDEN FEES</span><i></i><span>30 DAY RETURNS</span><i></i><span>HUMAN VERIFIED</span></div></section>
-    <div className={`calculator-dock ${calculatorOpen ? 'is-open' : ''}`}><button className="calculator-toggle" onClick={() => setCalculatorOpen((open) => !open)} aria-label={calculatorOpen ? 'Close calculator' : 'Open calculator'} aria-expanded={calculatorOpen}><Calculator size={21} /><span>CALC</span></button>{calculatorOpen && <div className="calculator-popup"><div className="calculator-popup-head"><span>QUICK CALC / 03</span><button onClick={() => setCalculatorOpen(false)} aria-label="Close calculator"><X size={16} /></button></div><Claculate /></div>}</div>
   </main>
 }

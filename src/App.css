@@ -45,7 +45,7 @@ body { background: #07111f; }
     padding: 10px;
 }
 .calculator input {
-    width: 145px;}
+}
 
 /* Home page composition: an editorial instrument panel rather than a standard storefront hero. */
 .home-page { background: #07111f; }

@@ -1,11 +1,9 @@
-import { Calculator, Heart, Menu, Search, ShoppingBag, UserRound, X } from 'lucide-react'
+import { Heart, Menu, Search, ShoppingBag, UserRound, X } from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import Claculate from './Claculate'
 
 export default function Navbar({ cartCount, favoriteCount }) {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [calculatorOpen, setCalculatorOpen] = useState(false)
   const navLinks = [{ label: 'Shop', to: '/products' }, { label: 'Categories', to: '/products' }, { label: 'About', to: '/#why-us' }]
 
   return (
@@ -26,7 +24,6 @@ export default function Navbar({ cartCount, favoriteCount }) {
           <Link className="account-link" to="/login"><UserRound size={18} /> <span>Account</span></Link>
         </div>
       </nav>
-      <div className={`calculator-dock ${calculatorOpen ? 'is-open' : ''}`}><button className="calculator-toggle" onClick={() => setCalculatorOpen((open) => !open)} aria-label={calculatorOpen ? 'Close calculator' : 'Open calculator'} aria-expanded={calculatorOpen}><Calculator size={21} /><span>CALC</span></button>{calculatorOpen && <div className="calculator-popup"><div className="calculator-popup-head"><span>QUICK CALC / 03</span><button onClick={() => setCalculatorOpen(false)} aria-label="Close calculator"><X size={16} /></button></div><Claculate /></div>}</div>
     </header>
   )
 }

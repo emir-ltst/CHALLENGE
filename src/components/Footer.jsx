@@ -1,6 +1,5 @@
 import { Globe, Radio, Video } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import Claculate from './Claculate.jsx'
 
 export default function Footer() {
   return <footer className="footer"><div className="footer-transmission"><div className="container"><span className="transmission-dot"></span><span>TRANSMISSION OPEN</span><span className="transmission-line"></span><span>SEE YOU ON THE OTHER SIDE</span></div></div><div className="container footer-grid">

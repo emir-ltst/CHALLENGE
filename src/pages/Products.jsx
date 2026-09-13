@@ -14,7 +14,12 @@ export default function Products({ onAddToCart, onToggleFavorite, favorites }) {
   const [sort, setSort] = useState('featured')
   const [filtersOpen, setFiltersOpen] = useState(false)
 
-  useEffect(() => setSearchParams(query ? { q: query } : {}, { replace: true }), [query, setSearchParams])
+  useEffect(() => {
+    const nextParams = new URLSearchParams()
+    if (query) nextParams.set('q', query)
+    if (category !== 'All') nextParams.set('category', category)
+    setSearchParams(nextParams, { replace: true })
+  }, [category, query, setSearchParams])
 
   const visibleProducts = products.filter((product) => {
     const searchMatch = `${product.title} ${product.brand} ${product.category}`.toLowerCase().includes(query.toLowerCase())

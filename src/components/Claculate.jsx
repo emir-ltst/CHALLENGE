@@ -22,13 +22,15 @@ const Claculate = () => {
 
   return (
     <div className="calculator">
+      <div className="calculator-heading"><span>TM // CALC</span><small>ONLINE</small></div>
       <input
+        className="calculator-display"
         type="text"
         value={result}
         readOnly
       />
 
-      <section className="btn">
+      <section className="calculator-buttons">
         <button onClick={clear}>C</button>
 
         <button onClick={() => handclick("-")}>-</button>

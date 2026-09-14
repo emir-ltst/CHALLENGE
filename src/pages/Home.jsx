@@ -14,3 +14,9 @@ const categoryIcons = {
   Audio: Headphones,
   Wearables: Watch,
 }
+
+export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
+  const [calculatorOpen, setCalculatorOpen] = useState(false)
+  const featured = products.slice(0, 4)
+  const topProduct = products[0]
+  const secondProduct = products[1]

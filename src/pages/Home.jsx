@@ -20,3 +20,6 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
   const featured = products.slice(0, 4)
   const topProduct = products[0]
   const secondProduct = products[1]
+
+  )
+}

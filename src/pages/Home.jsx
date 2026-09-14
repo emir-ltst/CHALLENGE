@@ -23,6 +23,11 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
 
   retrun (
     <main className="home-page">
+      {/* ══════════════════════════════════════════
+          HERO — full-viewport split composition
+      ══════════════════════════════════════════ */}
+
+
     </main>
 
   )

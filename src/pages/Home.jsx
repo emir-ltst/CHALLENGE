@@ -7,3 +7,10 @@ import { useState } from 'react'
 import { categories, products } from '../data/products'
 import ProductCard from '../components/ProductCard'
 import Claculate from '../components/Claculate'
+
+const categoryIcons = {
+  Smartphones: Smartphone,
+  Laptops: Laptop,
+  Audio: Headphones,
+  Wearables: Watch,
+}

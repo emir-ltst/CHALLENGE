@@ -22,7 +22,7 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
   const secondProduct = products[1]
 
   retrun (
-    <main >
+    <main className="home-page">
     </main>
 
   )

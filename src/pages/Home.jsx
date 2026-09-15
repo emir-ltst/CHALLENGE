@@ -29,11 +29,16 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
         <section className='hero-v2'>
             <div className="hero-copy-panel">
                   <p className="hero-eyebrow"><Zap size={11} /> TECHMARKET — COLLECTION 2026</p>
+                  
                   <h1 className="hero-title">
                       <span className="hero-title-top">Objects</span>
                       <span className="hero-title-mid">with</span>
                       <span className="hero-title-bot"><em>intent.</em></span>
                     </h1>
+                    
+                    <p className="hero-sub">
+                      A living index of tools that make ordinary days feel more capable.
+                    </p>
             </div>
         </section>
 

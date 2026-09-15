@@ -40,8 +40,8 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
                       A living index of tools that make ordinary days feel more capable.
                     </p>
 
-                    <div>
-                      
+                    <div className='hero-rating-pill'>
+
                     </div>
             </div>
         </section>

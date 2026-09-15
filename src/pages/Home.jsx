@@ -39,6 +39,10 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
                     <p className="hero-sub">
                       A living index of tools that make ordinary days feel more capable.
                     </p>
+
+                    <div>
+                      
+                    </div>
             </div>
         </section>
 

@@ -41,7 +41,9 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
                     </p>
 
                     <div className='hero-rating-pill'>
-
+                      <Link className="btn-hero-primary" to="/products">
+                        Enter the archive <ArrowRight size={16} />
+                      </Link>
                     </div>
             </div>
         </section>

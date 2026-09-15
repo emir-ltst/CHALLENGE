@@ -27,7 +27,9 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
           HERO — full-viewport split composition
       ══════════════════════════════════════════ */}
         <section className='hero-v2'>
-
+            <div className="hero-copy-panel">
+              
+            </div>
         </section>
 
     </main>

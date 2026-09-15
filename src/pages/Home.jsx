@@ -28,7 +28,8 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
       ══════════════════════════════════════════ */}
         <section className='hero-v2'>
             <div className="hero-copy-panel">
-              
+                  <p className="hero-eyebrow"><Zap size={11} /> TECHMARKET — COLLECTION 2026</p>
+
             </div>
         </section>
 

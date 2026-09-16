@@ -45,11 +45,6 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
                         Enter the archive <ArrowRight size={16} />
                       </Link>
                     </div>
-                                <div className="hero-rating-pill">
-              <span className="stars-sm">★★★★★</span>
-              <span>4.9 / 2,000+ users</span>
-            </div>
-          </div>
             </div>
         </section>
 

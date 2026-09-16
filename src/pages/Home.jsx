@@ -51,7 +51,21 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
             </div>
           </div>
         </section>
-
+                    {/* Floating stat cards */}
+          <div className="hero-stats-row">
+            <div className="hero-stat-card">
+              <strong>{products.length}</strong>
+              <span>Products</span>
+            </div>
+            <div className="hero-stat-card hero-stat-pink">
+              <strong>98%</strong>
+              <span>Satisfaction</span>
+            </div>
+            <div className="hero-stat-card hero-stat-lime">
+              <strong>24h</strong>
+              <span>Dispatch</span>
+            </div>
+          </div>
     </main>
 
   )

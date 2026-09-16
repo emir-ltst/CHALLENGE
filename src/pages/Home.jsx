@@ -66,6 +66,12 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
               <span>Dispatch</span>
             </div>
           </div>
+
+                  {/* Right panel — visual */}
+        <div className="hero-visual-panel">
+          {/* Big decorative circle */}
+          <div className="hero-circle-bg"></div>
+          </div>
     </main>
 
   )

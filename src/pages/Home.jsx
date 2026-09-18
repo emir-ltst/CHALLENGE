@@ -72,6 +72,14 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
           {/* Big decorative circle */}
           <div className="hero-circle-bg"></div>
           </div>
+                    {/* Main product frame */}
+          <div className="hero-product-frame">
+            <img
+              src="https://cdn.prod.website-files.com/61a5e47b1afd0c116d16aa40/69faf4d31de66816e9aef2af_Frame%202087327708.png"
+              alt="Tech products"
+            />
+            <div className="hero-frame-label">CURATED HARDWARE ✦</div>
+          </div>
     </main>
 
   )

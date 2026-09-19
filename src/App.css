@@ -149,3 +149,10 @@ img { display:block; max-width:100%; }
 .hero-sticker { position:absolute; z-index:4; top:42%; right:6%; display:flex; flex-direction:column; align-items:center; justify-content:center; width:66px; height:66px; background:var(--red); pointer-events:none; }
 .hero-sticker span { font:700 8px var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--white); line-height:1.5; }
 .hero-coord { position:absolute; z-index:3; bottom:5%; right:5%; font:500 7px var(--mono); letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.25); }
+
+/* ── MARQUEE ── */
+.marquee-strip { overflow:hidden; background:var(--off-white); border-bottom:var(--bxl); border-top:var(--b); padding:12px 0; }
+.marquee-track { display:flex; width:max-content; animation:marquee 28s linear infinite; }
+.marquee-group { white-space:nowrap; padding-right:80px; font:500 9px var(--mono); letter-spacing:.22em; text-transform:uppercase; color:var(--ink-70); }
+.marquee-group em { font-style:normal; color:var(--red); margin:0 20px; opacity:.5; }
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-33.333%)} }

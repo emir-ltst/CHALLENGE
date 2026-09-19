@@ -97,6 +97,12 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
               <em>${secondProduct.price.toLocaleString('en-US')}</em>
             </div>
           </Link>
+                    {/* Sticker badge */}
+          <div className="hero-sticker">
+            <span>NEW</span>
+            <span>DROP</span>
+            <span>2026</span>
+          </div>
     </main>
 
   )

@@ -12,6 +12,9 @@ export default function Navbar({ cartCount, favoriteCount }) {
           <span>FREE SHIPPING OVER $75 <em>★</em> 30-DAY RETURNS <em>★</em> 2,000+ HAPPY CUSTOMERS <em>★</em> FREE SHIPPING OVER $75 <em>★</em> 30-DAY RETURNS <em>★</em> 2,000+ HAPPY CUSTOMERS <em>★</em> FREE SHIPPING OVER $75 <em>★</em> 30-DAY RETURNS <em>★</em></span>
             </div>
           </div>
+
+          <nav className='navbar container'></nav>
+
       </header>
   )
 }

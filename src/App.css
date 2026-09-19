@@ -111,3 +111,11 @@ img { display:block; max-width:100%; }
 .btn-hero-primary:hover { background:var(--red); transform:translate(-3px,-3px); box-shadow:var(--s2); }
 .hero-rating-pill { display:flex; align-items:center; gap:8px; padding:8px 14px; border:var(--b); background:var(--white); font:500 10px var(--mono); letter-spacing:.06em; color:var(--ink-70); }
 .stars-sm { color:var(--red); font-size:11px; letter-spacing:2px; }
+
+.hero-stats-row { display:flex; gap:0; margin-top:44px; border:var(--b); overflow:hidden; }
+.hero-stat-card { display:flex; flex-direction:column; align-items:flex-start; padding:16px 20px; flex:1; background:var(--white); border-right:var(--b); transition:background .14s; }
+.hero-stat-card:last-child { border-right:none; }
+.hero-stat-card:hover { background:var(--cream-dk); }
+.hero-stat-card strong { display:block; font-family:var(--serif); font-size:34px; font-weight:900; line-height:1; letter-spacing:-.02em; color:var(--ink); }
+.hero-stat-card span { display:block; font:500 8px var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-40); margin-top:4px; }
+.hero-stat-pink { background:var(--red); }

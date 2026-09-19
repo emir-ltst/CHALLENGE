@@ -264,3 +264,8 @@ img { display:block; max-width:100%; }
 .pc-mini-badge { position:absolute; top:0; left:0; padding:3px 8px; background:var(--ink); color:var(--white); font:500 7px var(--mono); letter-spacing:.12em; text-transform:uppercase; border-right:var(--b); border-bottom:var(--b); }
 .pc-mini-body { padding:12px 14px 14px; display:flex; flex-direction:column; gap:3px; }
 .pc-mini-title { margin:2px 0 8px; font-family:var(--serif); font-size:15px; font-weight:700; letter-spacing:-.01em; line-height:1.1; color:var(--ink); }
+
+/* ── WHY V2 ── */
+.why-v2 { position:relative; padding:96px 0 84px; background:var(--cream-dk); border-bottom:var(--bxl); overflow:hidden; }
+.why-bg-text { position:absolute; right:-2%; top:-24px; font-family:var(--serif); font-size:230px; font-style:italic; font-weight:900; color:var(--cream-mid); pointer-events:none; line-height:1; letter-spacing:-.04em; user-select:none; }
+.why-dots { display:none; }

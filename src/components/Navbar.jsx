@@ -26,6 +26,20 @@ export default function Navbar({ cartCount, favoriteCount }) {
           <NavLink to="/#why-us" onClick={() => setMenuOpen(false)}>About</NavLink>
           <span className="nav-badge"><Zap size={10} /> SALE</span>
             </div>
+
+          <div className="nav-actions">
+          <Link className="icon-button" to="/products" aria-label="Search products">
+            <Search size={18} />
+          </Link>
+          <Link className="icon-button action-with-count" to="/favorites" aria-label="Favorites">
+            <Heart size={18} />
+            {favoriteCount > 0 && <small>{favoriteCount}</small>}
+          </Link>
+          <Link className="icon-button action-with-count cart-icon-btn" to="/cart" aria-label="Shopping cart>
+          <ShoppingBag size={18} />
+            {cartCount > 0 && <small>{cartCount}</small>}
+          </Link>
+
           </nav>
 
 

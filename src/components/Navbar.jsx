@@ -28,6 +28,9 @@ export default function Navbar({ cartCount, favoriteCount }) {
             </div>
           </nav>
 
+          <div className="nav-actions">
+            
+          </div>
       </header>
   )
 }

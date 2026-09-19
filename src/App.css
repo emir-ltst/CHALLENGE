@@ -58,3 +58,17 @@ img { display:block; max-width:100%; }
 /* ── NAVBAR ── */
 .site-header { position:sticky; top:0; z-index:200; background:var(--cream); border-bottom:var(--bxl); }
 .navbar { display:flex; align-items:center; height:72px; }
+
+.brand { display:inline-flex; align-items:center; gap:10px; flex-shrink:0; transition:opacity .14s; }
+.brand:hover { opacity:.6; }
+.brand-mark { display:grid; place-items:center; width:36px; height:36px; background:var(--ink); color:var(--white); border:var(--bh); font-family:var(--serif); font-weight:900; font-size:17px; flex-shrink:0; }
+.brand-wordmark { font-family:var(--serif); font-weight:700; font-size:19px; color:var(--ink); letter-spacing:-.01em; line-height:1; }
+.brand-wordmark strong { font-style:italic; font-weight:700; color:var(--red); }
+.brand-sticker { font:500 8px var(--mono); background:transparent; border:var(--b); padding:2px 7px; color:var(--ink-40); letter-spacing:.15em; text-transform:uppercase; }
+
+.brand { display:inline-flex; align-items:center; gap:10px; flex-shrink:0; transition:opacity .14s; }
+.brand:hover { opacity:.6; }
+.brand-mark { display:grid; place-items:center; width:36px; height:36px; background:var(--ink); color:var(--white); border:var(--bh); font-family:var(--serif); font-weight:900; font-size:17px; flex-shrink:0; }
+.brand-wordmark { font-family:var(--serif); font-weight:700; font-size:19px; color:var(--ink); letter-spacing:-.01em; line-height:1; }
+.brand-wordmark strong { font-style:italic; font-weight:700; color:var(--red); }
+.brand-sticker { font:500 8px var(--mono); background:transparent; border:var(--b); padding:2px 7px; color:var(--ink-40); letter-spacing:.15em; text-transform:uppercase; }

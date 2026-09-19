@@ -13,7 +13,11 @@ export default function Navbar({ cartCount, favoriteCount }) {
             </div>
           </div>
 
-          <nav className='navbar container'></nav>
+          <nav className='navbar container'>
+            <Link className="brand" to="/" onClick={() => setMenuOpen(false)}>
+            
+            </Link>
+          </nav>
 
       </header>
   )

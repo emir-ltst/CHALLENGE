@@ -7,6 +7,13 @@ export default function ProductCard({ product, onAddToCart, onToggleFavorite, is
 function DefaultCard({ product, onAddToCart, onToggleFavorite, isFavorite }) {
   return (
         <article className="pc pc-default">
+        <div className="pc-image-wrap">
 
   )
 }
+
+
+
+git add .
+git commit -m "
+git push

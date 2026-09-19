@@ -215,3 +215,13 @@ img { display:block; max-width:100%; }
 .pc-add { display:grid; place-items:center; width:36px; height:36px; border:var(--b); background:var(--ink); color:var(--white); cursor:pointer; flex-shrink:0; transition:background .14s,transform .14s; }
 .pc-add:hover { background:var(--red); transform:scale(1.08); }
 .pc-cat-badge { display:inline-block; padding:3px 8px; background:var(--ink); color:var(--white); font:500 7px var(--mono); letter-spacing:.12em; text-transform:uppercase; }
+/* DEFAULT */
+.pc-default { border:var(--bh); background:var(--white); display:flex; flex-direction:column; transition:box-shadow .14s,transform .14s; }
+.pc-default:hover { box-shadow:var(--s1); transform:translate(-2px,-2px); z-index:2; }
+.pc-default .pc-image-wrap { position:relative; aspect-ratio:1/1.05; overflow:hidden; background:var(--cream-dk); border-bottom:var(--bh); }
+.pc-default .pc-image-wrap img { width:100%; height:100%; object-fit:cover; filter:grayscale(.15) contrast(1.05); transition:transform .35s,filter .3s; }
+.pc-default:hover .pc-image-wrap img { transform:scale(1.05); filter:grayscale(0) contrast(1.1); }
+.pc-default .pc-fav { position:absolute; top:10px; right:10px; }
+.pc-default .pc-cat-badge { position:absolute; left:0; bottom:0; border-top:var(--bh); border-right:var(--bh); }
+.pc-default .pc-body { padding:15px 16px 17px; display:flex; flex-direction:column; flex:1; }
+.pc-default .pc-title { margin:0 0 auto; font-family:var(--serif); font-size:19px; font-weight:700; letter-spacing:-.01em; line-height:1.15; color:var(--ink); padding-bottom:10px; padding-top:4px; }

@@ -5,5 +5,7 @@ export default function ProductCard({ product, onAddToCart, onToggleFavorite, is
   return <DefaultCard product={product} onAddToCart={onAddToCart} onToggleFavorite={onToggleFavorite} isFavorite={isFavorite} />
 }
 function DefaultCard({ product, onAddToCart, onToggleFavorite, isFavorite }) {
-  
+  return (
+    
+  )
 }

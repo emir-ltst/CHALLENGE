@@ -279,3 +279,12 @@ img { display:block; max-width:100%; }
 .why-panel { position:relative; padding:26px 22px 24px; border:var(--bh); display:flex; flex-direction:column; gap:12px; transition:box-shadow .14s,transform .14s; }
 .why-panel:hover { box-shadow:var(--s1); transform:translate(-2px,-2px); }
 .why-panel-pink { background:var(--ink); color:var(--white); }
+.why-panel-pink svg { color:rgba(255,255,255,.45); }
+.why-panel-lime  { background:var(--off-white); }
+.why-panel-white { background:var(--off-white); }
+.why-panel-dark  { background:var(--red); color:var(--white); }
+.why-panel-dark svg { color:rgba(255,255,255,.55); }
+.why-panel-tall { padding-bottom:78px; transform:translateY(20px); }
+.why-panel-tall:hover { transform:translateY(20px) translate(-2px,-2px); }
+.why-panel-num { position:absolute; top:10px; right:13px; font:500 8px var(--mono); letter-spacing:.1em; color:var(--ink-40); }
+.why-panel-pink .why-panel-num,

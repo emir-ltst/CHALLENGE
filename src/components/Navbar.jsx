@@ -43,6 +43,9 @@ export default function Navbar({ cartCount, favoriteCount }) {
           <UserRound size={15} />
             <span>Account</span>
           </Link>
+          <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+            
+          </button>
           </div>
           </nav>
 

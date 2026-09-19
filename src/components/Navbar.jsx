@@ -17,7 +17,7 @@ export default function Navbar({ cartCount, favoriteCount }) {
             <Link className="brand" to="/" onClick={() => setMenuOpen(false)}>
           <span className="brand-mark">T</span>
           <span className="brand-wordmark">Tech<strong>Market</strong></span>
-          
+          <span className="brand-sticker">Y2K</span>
             </Link>
           </nav>
 

@@ -94,3 +94,6 @@ img { display:block; max-width:100%; }
 
 .hero-copy-panel { display:flex; flex-direction:column; justify-content:center; padding:80px 64px 80px max(calc((100vw - 1200px)/2 + 30px),30px); background:var(--cream); border-right:var(--bxl); position:relative; overflow:hidden; }
 .hero-copy-panel::after { content:'"'; position:absolute; right:-24px; bottom:-110px; font-family:var(--serif); font-size:520px; font-style:italic; font-weight:900; color:var(--cream-dk); line-height:1; pointer-events:none; user-select:none; }
+
+.hero-eyebrow { display:inline-flex; align-items:center; gap:8px; margin:0 0 28px; font:500 9px var(--mono); letter-spacing:.22em; text-transform:uppercase; color:var(--ink-40); position:relative; }
+.hero-eyebrow svg { color:var(--red); }

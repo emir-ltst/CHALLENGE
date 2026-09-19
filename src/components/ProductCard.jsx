@@ -10,7 +10,12 @@ function DefaultCard({ product, onAddToCart, onToggleFavorite, isFavorite }) {
         <div className="pc-image-wrap">
         <Link to={`/products/${product.id}`}>
           <img src={product.image} alt={product.title} loading="lazy" />
-
+        </Link>
+        <button className={`pc-fav ${isFavorite ? 'is-fav' : ''}`}
+          onClick={() => onToggleFavorite(product.id)}
+          aria-label={`${isFavorite ? 'Remove' : 'Add'} ${product.title} ${isFavorite ? 'from' : 'to'} favorites`}>
+            
+        </button>
   )
 }
 

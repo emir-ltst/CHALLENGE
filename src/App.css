@@ -311,3 +311,16 @@ img { display:block; max-width:100%; }
 .footer-main { display:grid; grid-template-columns:1.4fr .7fr .7fr 1.2fr; gap:48px; padding:60px 0; border-bottom:1px solid rgba(255,255,255,.07); }
 .footer-col { display:flex; flex-direction:column; }
 .footer-brand { margin-bottom:16px; }
+.footer-brand .brand-mark { background:rgba(255,255,255,.08); border-color:rgba(255,255,255,.14); color:var(--white); }
+.footer-brand .brand-wordmark { color:var(--white); }
+.footer-brand .brand-wordmark strong { color:var(--red); }
+.footer-about { font-size:12px; line-height:1.75; color:rgba(255,255,255,.4); margin:0 0 22px; max-width:240px; }
+.footer-socials { display:flex; gap:8px; }
+.footer-socials a { display:grid; place-items:center; width:34px; height:34px; border:1px solid rgba(255,255,255,.16); color:rgba(255,255,255,.5); transition:color .14s,border-color .14s,background .14s; }
+.footer-socials a:hover { color:var(--white); border-color:var(--white); background:rgba(255,255,255,.05); }
+.footer-col h4 { margin:0 0 16px; font-family:var(--serif); font-size:14px; font-weight:700; letter-spacing:.01em; color:var(--white); padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,.1); }
+.footer-col a { display:block; margin-bottom:10px; color:rgba(255,255,255,.42); font-size:12px; font-weight:500; transition:color .14s; }
+.footer-col a:hover { color:var(--white); }
+.footer-nl-desc { font-size:12px; line-height:1.7; color:rgba(255,255,255,.38); margin:0 0 16px; }
+.footer-nl-form { display:flex; border:1px solid rgba(255,255,255,.18); margin-bottom:14px; transition:border-color .14s; }
+.footer-nl-form:focus-within { border-color:rgba(255,255,255,.5); }

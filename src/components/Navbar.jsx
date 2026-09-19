@@ -22,7 +22,7 @@ export default function Navbar({ cartCount, favoriteCount }) {
 
             <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
           <NavLink to="/products" onClick={() => setMenuOpen(false)}>Shop</NavLink>
-
+          <NavLink to="/products" onClick={() => setMenuOpen(false)}>New arrivals</NavLink>
             </div>
           </nav>
 

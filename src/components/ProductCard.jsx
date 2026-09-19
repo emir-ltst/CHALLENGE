@@ -14,7 +14,7 @@ function DefaultCard({ product, onAddToCart, onToggleFavorite, isFavorite }) {
         <button className={`pc-fav ${isFavorite ? 'is-fav' : ''}`}
           onClick={() => onToggleFavorite(product.id)}
           aria-label={`${isFavorite ? 'Remove' : 'Add'} ${product.title} ${isFavorite ? 'from' : 'to'} favorites`}>
-            
+                      <Heart size={15} fill={isFavorite ? 'currentColor' : 'none'} />
         </button>
   )
 }

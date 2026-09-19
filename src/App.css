@@ -5,3 +5,27 @@
    ============================================================ */
 
 /* ── TOKENS ── */
+:root {
+  --cream:      #f4f0eb;
+  --cream-dk:   #ede8e1;
+  --cream-mid:  #e5dfd5;
+  --off-white:  #faf8f5;
+  --white:      #ffffff;
+  --ink:        #0a0a0a;
+  --ink-90:     #1a1a1a;
+  --ink-70:     #3d3d3d;
+  --ink-40:     #888888;
+  --ink-20:     #c8c8c8;
+  --ink-10:     #e8e8e8;
+  --red:        #c8102e;
+  --red-dk:     #9a0c22;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans:  'Inter', system-ui, sans-serif;
+  --mono:  'DM Mono', 'Courier New', monospace;
+  --b:   2px solid var(--ink);
+  --bh:  3px solid var(--ink);
+  --bxl: 4px solid var(--ink);
+  --s1:  4px 4px 0 var(--ink);
+  --s2:  6px 6px 0 var(--ink);
+  --s3: 10px 10px 0 var(--ink);
+}

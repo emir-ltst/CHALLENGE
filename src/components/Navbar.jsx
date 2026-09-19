@@ -37,7 +37,8 @@ export default function Navbar({ cartCount, favoriteCount }) {
             {favoriteCount > 0 && <small>{favoriteCount}</small>}
           </Link>
           <Link className="icon-button action-with-count cart-icon-btn" to="/cart" aria-label="Shopping cart>
-          
+          <ShoppingBag size={18} />
+            {cartCount > 0 && <small>{cartCount}</small>}
           </Link>
           </div>
       </header>

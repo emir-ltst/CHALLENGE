@@ -89,6 +89,14 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
               <em>${topProduct.price.toLocaleString('en-US')}</em>
             </div>
           </Link>
+            <Link className="hero-float-card hero-float-bot" to={`/products/${secondProduct.id}`}>
+            <img src={secondProduct.image} alt={secondProduct.title} />
+            <div className="hero-float-info">
+              <span>{secondProduct.brand}</span>
+              <strong>{secondProduct.title}</strong>
+              <em>${secondProduct.price.toLocaleString('en-US')}</em>
+            </div>
+          </Link>
     </main>
 
   )

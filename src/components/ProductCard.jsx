@@ -8,6 +8,7 @@ function DefaultCard({ product, onAddToCart, onToggleFavorite, isFavorite }) {
   return (
         <article className="pc pc-default">
         <div className="pc-image-wrap">
+        <Link to={`/products/${product.id}`}>
 
   )
 }

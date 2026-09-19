@@ -106,6 +106,8 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
                     {/* Orbits */}
           <div className="hero-orbit orbit-a"></div>
           <div className="hero-orbit orbit-b"></div>
+                    {/* Coord label */}
+          <div className="hero-coord">LAT 40.71 / LONG 74.00</div> 
     </main>
 
   )

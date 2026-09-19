@@ -339,3 +339,9 @@ img { display:block; max-width:100%; }
 .button:hover { transform:translate(-3px,-3px); box-shadow:var(--s2); }
 .button-dark { background:var(--ink); color:var(--white); }
 .button-dark:hover { background:var(--red); box-shadow:var(--s2); }
+/* ── INNER PAGES ── */
+.catalog-page,.detail-page,.cart-page,.favorites-page,.admin-page { min-height:650px; padding:80px 0 110px; background:var(--cream); }
+.page-intro { margin-bottom:52px; }
+.page-intro h1,.page-heading h1,.admin-header h1 { margin:0; font-family:var(--serif); font-size:clamp(50px,7vw,94px); font-weight:900; letter-spacing:-.03em; line-height:.92; color:var(--ink); }
+.page-intro > p.section-eyebrow { margin-bottom:16px; }
+.page-intro > p:last-child,.detail-description { max-width:520px; color:var(--ink-70); font-size:14px; line-height:1.7; margin:16px 0 0; }

@@ -88,3 +88,6 @@ img { display:block; max-width:100%; }
 .nav-account-btn { display:flex; align-items:center; gap:6px; margin-left:12px; padding:8px 16px; border:var(--bh); background:transparent; color:var(--ink); font:600 10px var(--mono); letter-spacing:.1em; text-transform:uppercase; cursor:pointer; transition:background .14s,color .14s; }
 .nav-account-btn:hover { background:var(--ink); color:var(--white); }
 .menu-button { display:none; place-items:center; padding:8px; border:none; background:transparent; color:var(--ink); cursor:pointer; }
+
+/* ── HERO ── */
+.hero-v2 { display:grid; grid-template-columns:1fr 1fr; min-height:calc(100vh - 102px); overflow:hidden; border-bottom:var(--bxl); }

@@ -5,3 +5,4 @@ import { products } from '../data/products'
 
 
 export default function ProductDetails({ onAddToCart, onToggleFavorite, favorites }) {
+  const { id } = useParams()

@@ -18,11 +18,21 @@ function DefaultCard({ product, onAddToCart, onToggleFavorite, isFavorite }) {
         </button>
                 <span className="pc-cat-badge">{product.category}</span>
       </div>
+            <div className="pc-body">
+        <div className="pc-meta">
+          <span className="pc-brand">{product.brand}</span>
+          <span className="pc-rating"><Star size={11} fill="currentColor" /> {product.rating}</span>
+        </div>
+        <Link to={`/products/${product.id}`}>
+          <h3 className="pc-title">{product.title}</h3>
+        </Link>
+        <div className="pc-foot">
+          <strong className="pc-price">${fmt(product.price)}</strong>
+          <button className="pc-add" onClick={() => onAddToCart(product)} aria-label={`Add ${product.title} to cart`}>
+            <Plus size={15} />
+          </button>
+        </div>
+      </div>
+    </article>
   )
 }
-
-
-
-git add .
-git commit -m "
-git push

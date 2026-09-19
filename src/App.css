@@ -103,3 +103,11 @@ img { display:block; max-width:100%; }
 .hero-title-mid { font-size:clamp(40px,5vw,70px); color:var(--ink-40); font-style:italic; font-weight:400; padding-left:6px; line-height:1.12; }
 .hero-title-bot { font-size:clamp(72px,9.5vw,130px); line-height:.88; }
 .hero-title-bot em { font-style:italic; color:var(--red); }
+
+.hero-sub { max-width:360px; margin:0 0 36px; font-size:15px; line-height:1.7; color:var(--ink-70); }
+
+.hero-cta-row { display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+.btn-hero-primary { display:inline-flex; align-items:center; gap:10px; padding:14px 28px; border:var(--bxl); background:var(--ink); color:var(--white); font:600 10px var(--mono); letter-spacing:.12em; text-transform:uppercase; cursor:pointer; box-shadow:var(--s1); transition:transform .14s,box-shadow .14s,background .14s; }
+.btn-hero-primary:hover { background:var(--red); transform:translate(-3px,-3px); box-shadow:var(--s2); }
+.hero-rating-pill { display:flex; align-items:center; gap:8px; padding:8px 14px; border:var(--b); background:var(--white); font:500 10px var(--mono); letter-spacing:.06em; color:var(--ink-70); }
+.stars-sm { color:var(--red); font-size:11px; letter-spacing:2px; }

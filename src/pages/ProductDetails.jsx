@@ -4,10 +4,4 @@ import { Link, useParams } from 'react-router-dom'
 import { products } from '../data/products'
 
 
-const ProductDetails = () => {
-  return (
-    <div>ProductDetails</div>
-  )
-}
-
-export default ProductDetails
+export default function ProductDetails({ onAddToCart, onToggleFavorite, favorites }) {

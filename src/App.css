@@ -97,3 +97,9 @@ img { display:block; max-width:100%; }
 
 .hero-eyebrow { display:inline-flex; align-items:center; gap:8px; margin:0 0 28px; font:500 9px var(--mono); letter-spacing:.22em; text-transform:uppercase; color:var(--ink-40); position:relative; }
 .hero-eyebrow svg { color:var(--red); }
+
+.hero-title { display:flex; flex-direction:column; margin:0 0 26px; font-family:var(--serif); font-weight:900; line-height:.91; letter-spacing:-.03em; position:relative; }
+.hero-title-top { font-size:clamp(64px,8.5vw,118px); color:var(--ink); }
+.hero-title-mid { font-size:clamp(40px,5vw,70px); color:var(--ink-40); font-style:italic; font-weight:400; padding-left:6px; line-height:1.12; }
+.hero-title-bot { font-size:clamp(72px,9.5vw,130px); line-height:.88; }
+.hero-title-bot em { font-style:italic; color:var(--red); }

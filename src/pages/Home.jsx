@@ -80,6 +80,15 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
             />
             <div className="hero-frame-label">CURATED HARDWARE ✦</div>
           </div>
+                    {/* Floating product card — top right */}
+          <Link className="hero-float-card hero-float-top" to={`/products/${topProduct.id}`}>
+            <img src={topProduct.image} alt={topProduct.title} />
+            <div className="hero-float-info">
+              <span>{topProduct.brand}</span>
+              <strong>{topProduct.title}</strong>
+              <em>${topProduct.price.toLocaleString('en-US')}</em>
+            </div>
+          </Link>
     </main>
 
   )

@@ -16,6 +16,8 @@ function DefaultCard({ product, onAddToCart, onToggleFavorite, isFavorite }) {
           aria-label={`${isFavorite ? 'Remove' : 'Add'} ${product.title} ${isFavorite ? 'from' : 'to'} favorites`}>
                       <Heart size={15} fill={isFavorite ? 'currentColor' : 'none'} />
         </button>
+                <span className="pc-cat-badge">{product.category}</span>
+      </div>
   )
 }
 

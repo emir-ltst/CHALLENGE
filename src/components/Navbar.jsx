@@ -40,8 +40,10 @@ export default function Navbar({ cartCount, favoriteCount }) {
             {cartCount > 0 && <small>{cartCount}</small>}
           </Link>
           <Link className="nav-account-btn" to="/login">
-          
+          <UserRound size={15} />
+            <span>Account</span>
           </Link>
+          </div>
           </nav>
 
 

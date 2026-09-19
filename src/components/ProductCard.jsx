@@ -6,6 +6,7 @@ export default function ProductCard({ product, onAddToCart, onToggleFavorite, is
 }
 function DefaultCard({ product, onAddToCart, onToggleFavorite, isFavorite }) {
   return (
-    
+        <article className="pc pc-default">
+
   )
 }

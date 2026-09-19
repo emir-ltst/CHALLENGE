@@ -103,6 +103,9 @@ export default function Home({ onAddToCart, onToggleFavorite, favorites }) {
             <span>DROP</span>
             <span>2026</span>
           </div>
+                    {/* Orbits */}
+          <div className="hero-orbit orbit-a"></div>
+          <div className="hero-orbit orbit-b"></div>
     </main>
 
   )

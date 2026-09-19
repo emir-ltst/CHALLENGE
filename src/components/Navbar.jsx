@@ -6,6 +6,8 @@ import { useState } from 'react'
 export default function Navbar({ cartCount, favoriteCount }) {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
-    
+      <header className="site-header">
+
+      </header>
   )
 }

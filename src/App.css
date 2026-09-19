@@ -173,3 +173,21 @@ img { display:block; max-width:100%; }
 .bento-card-md { grid-column:span 2; }
 .bento-card-sm { grid-column:span 1; }
 .bento-card-calc { grid-column:span 1; }
+.bento-overlay { position:absolute; inset:auto 0 0; z-index:2; padding:40px 20px 20px; color:var(--white); background:linear-gradient(transparent,rgba(10,10,10,.84)); display:flex; flex-direction:column; gap:4px; }
+.bento-card-xl .bento-overlay { padding-top:70px; }
+.bento-overlay h3 { margin:6px 0 2px; font-family:var(--serif); font-size:22px; font-weight:700; letter-spacing:-.01em; line-height:1; }
+.bento-card-xl .bento-overlay h3 { font-size:32px; }
+.bento-overlay p { margin:0; font:500 9px var(--mono); letter-spacing:.08em; opacity:.6; }
+.bento-index { position:absolute; top:12px; right:12px; z-index:3; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.22); padding:2px 7px; color:rgba(255,255,255,.65); font:500 7px var(--mono); letter-spacing:.1em; }
+.bento-cta { display:inline-block; margin-top:8px; font:600 9px var(--mono); letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.5); transition:color .14s; }
+.bento-card:hover .bento-cta { color:var(--white); }
+.bento-card-calc { background:var(--cream-dk); border:1px solid var(--ink-20); }
+.bento-card-calc::after { display:none; }
+.bento-card-calc:hover { transform:none; }
+.bento-card-calc.is-open { grid-column:span 2; }
+.bento-calc-inner { padding:14px; height:100%; display:flex; flex-direction:column; background:var(--ink); }
+.bento-calc-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; color:rgba(255,255,255,.38); font:500 8px var(--mono); letter-spacing:.16em; text-transform:uppercase; }
+.bento-calc-inner .calculator { flex:1; padding:12px; border:none; box-shadow:none; }
+.bento-calc-inner .calculator-display { height:42px; margin-bottom:10px; }
+.bento-calc-inner .calculator-buttons { gap:4px; }
+.bento-calc-inner .calculator-buttons button { min-height:30px; font-size:11px; }

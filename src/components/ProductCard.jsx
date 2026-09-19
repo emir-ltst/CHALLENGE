@@ -1,6 +1,0 @@
-import { Heart, Plus, Star } from 'lucide-react'
-import { Link } from 'react-router-dom'
-
-export default function ProductCard({ product, onAddToCart, onToggleFavorite, isFavorite }) {
-  return <article className="product-card"><div className="product-image-wrap"><Link to={`/products/${product.id}`}><img src={product.image} alt={product.title} /></Link><button className={`favorite-button ${isFavorite ? 'is-favorite' : ''}`} onClick={() => onToggleFavorite(product.id)} aria-label={`${isFavorite ? 'Remove' : 'Add'} ${product.title} ${isFavorite ? 'from' : 'to'} favorites`}><Heart size={18} fill={isFavorite ? 'currentColor' : 'none'} /></button><span className="product-category">{product.category}</span></div><div className="product-info"><div className="product-meta"><span>{product.brand}</span><span className="rating"><Star size={13} fill="currentColor" /> {product.rating}</span></div><Link to={`/products/${product.id}`}><h3>{product.title}</h3></Link><div className="product-bottom"><strong>${product.price.toLocaleString()}</strong><button className="add-button" onClick={() => onAddToCart(product)} aria-label={`Add ${product.title} to cart`}><Plus size={17} /></button></div></div></article>
-}

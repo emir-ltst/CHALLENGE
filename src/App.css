@@ -201,3 +201,17 @@ img { display:block; max-width:100%; }
 .editorial-main { min-width:0; display:flex; flex-direction:column; }
 .editorial-stack { display:flex; flex-direction:column; gap:3px; min-width:0; }
 .featured-scroll-row { display:grid; grid-template-columns:repeat(4,1fr); gap:3px; }
+
+/* ── PRODUCT CARDS ── */
+.pc { min-width:0; }
+.pc-brand { font:500 8px var(--mono); letter-spacing:.12em; text-transform:uppercase; color:var(--ink-40); }
+.pc-rating { display:inline-flex; align-items:center; gap:3px; font:500 9px var(--mono); color:var(--red); }
+.pc-meta { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.pc-price { font-family:var(--serif); font-size:24px; font-weight:700; letter-spacing:-.01em; color:var(--ink); }
+.pc-foot { display:flex; align-items:center; justify-content:space-between; margin-top:auto; }
+.pc-fav { display:grid; place-items:center; width:34px; height:34px; border:var(--b); border-radius:0; background:rgba(244,240,235,.92); color:var(--ink-40); cursor:pointer; transition:background .14s,color .14s,transform .14s; flex-shrink:0; }
+.pc-fav:hover { background:var(--cream-dk); color:var(--ink); transform:scale(1.08); }
+.pc-fav.is-fav { color:var(--red); border-color:var(--red); }
+.pc-add { display:grid; place-items:center; width:36px; height:36px; border:var(--b); background:var(--ink); color:var(--white); cursor:pointer; flex-shrink:0; transition:background .14s,transform .14s; }
+.pc-add:hover { background:var(--red); transform:scale(1.08); }
+.pc-cat-badge { display:inline-block; padding:3px 8px; background:var(--ink); color:var(--white); font:500 7px var(--mono); letter-spacing:.12em; text-transform:uppercase; }

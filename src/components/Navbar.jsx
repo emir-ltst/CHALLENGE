@@ -28,19 +28,7 @@ export default function Navbar({ cartCount, favoriteCount }) {
             </div>
           </nav>
 
-          <div className="nav-actions">
-          <Link className="icon-button" to="/products" aria-label="Search products">
-            <Search size={18} />
-          </Link>
-          <Link className="icon-button action-with-count" to="/favorites" aria-label="Favorites">
-            <Heart size={18} />
-            {favoriteCount > 0 && <small>{favoriteCount}</small>}
-          </Link>
-          <Link className="icon-button action-with-count cart-icon-btn" to="/cart" aria-label="Shopping cart>
-          <ShoppingBag size={18} />
-            {cartCount > 0 && <small>{cartCount}</small>}
-          </Link>
-          </div>
+
       </header>
   )
 }

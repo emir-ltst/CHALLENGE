@@ -40,3 +40,11 @@ img { display:block; max-width:100%; }
 .app-shell { min-height:100vh; overflow-x:hidden; background:var(--cream); }
 .app-shell > * { position:relative; z-index:1; }
 .container { width:min(1200px, calc(100% - 60px)); margin:0 auto; }
+
+/* ── SHARED ── */
+.section-eyebrow { margin:0 0 14px; color:var(--ink-40); font:500 9px var(--mono); letter-spacing:.22em; text-transform:uppercase; }
+.section-title { margin:0; font-family:var(--serif); font-weight:700; font-size:clamp(38px,5vw,70px); line-height:1.02; letter-spacing:-.02em; color:var(--ink); }
+.section-title em { font-style:italic; color:var(--red); }
+.text-link { display:inline-flex; align-items:center; gap:6px; font:600 10px var(--mono); letter-spacing:.12em; text-transform:uppercase; color:var(--ink); border-bottom:var(--b); padding-bottom:3px; white-space:nowrap; transition:color .14s,border-color .14s,gap .14s; }
+.text-link:hover { color:var(--red); border-color:var(--red); gap:10px; }
+.eyebrow { margin:0 0 12px; color:var(--ink-40); font:500 9px var(--mono); letter-spacing:.18em; text-transform:uppercase; }

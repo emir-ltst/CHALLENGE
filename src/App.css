@@ -55,3 +55,6 @@ img { display:block; max-width:100%; }
 .ticker-inner span { white-space:nowrap; padding-right:60px; font:500 9px var(--mono); letter-spacing:.2em; text-transform:uppercase; }
 .ticker-inner em { font-style:normal; color:var(--red); margin:0 18px; opacity:.65; }
 @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-33.333%)} }
+/* ── NAVBAR ── */
+.site-header { position:sticky; top:0; z-index:200; background:var(--cream); border-bottom:var(--bxl); }
+.navbar { display:flex; align-items:center; height:72px; }

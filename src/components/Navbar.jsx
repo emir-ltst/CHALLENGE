@@ -36,6 +36,9 @@ export default function Navbar({ cartCount, favoriteCount }) {
             <Heart size={18} />
             {favoriteCount > 0 && <small>{favoriteCount}</small>}
           </Link>
+          <Link className="icon-button action-with-count cart-icon-btn" to="/cart" aria-label="Shopping cart>
+          
+          </Link>
           </div>
       </header>
   )

@@ -9,7 +9,7 @@ export default function Navbar({ cartCount, favoriteCount }) {
       <header className="site-header">
           <div className="announcement">
             <div className="icker-inner">
-              
+          <span>FREE SHIPPING OVER $75 <em>★</em> 30-DAY RETURNS <em>★</em> 2,000+ HAPPY CUSTOMERS <em>★</em> FREE SHIPPING OVER $75 <em>★</em> 30-DAY RETURNS <em>★</em> 2,000+ HAPPY CUSTOMERS <em>★</em> FREE SHIPPING OVER $75 <em>★</em> 30-DAY RETURNS <em>★</em></span>
             </div>
           </div>
       </header>

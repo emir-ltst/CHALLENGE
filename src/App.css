@@ -324,3 +324,12 @@ img { display:block; max-width:100%; }
 .footer-nl-desc { font-size:12px; line-height:1.7; color:rgba(255,255,255,.38); margin:0 0 16px; }
 .footer-nl-form { display:flex; border:1px solid rgba(255,255,255,.18); margin-bottom:14px; transition:border-color .14s; }
 .footer-nl-form:focus-within { border-color:rgba(255,255,255,.5); }
+.footer-nl-form input { flex:1; padding:10px 14px; border:none; outline:none; background:transparent; color:var(--white); font-size:12px; }
+.footer-nl-form input::placeholder { color:rgba(255,255,255,.25); }
+.footer-nl-form button { border:none; border-left:1px solid rgba(255,255,255,.18); background:var(--red); color:var(--white); padding:0 16px; font-size:18px; cursor:pointer; transition:background .14s; }
+.footer-nl-form button:hover { background:var(--red-dk); }
+.footer-badges { display:flex; gap:8px; flex-wrap:wrap; }
+.footer-badge { padding:3px 9px; border:1px solid rgba(255,255,255,.12); color:rgba(255,255,255,.34); font:500 7px var(--mono); letter-spacing:.14em; text-transform:uppercase; }
+.footer-badge-lime { border-color:rgba(200,16,46,.4); color:rgba(200,16,46,.65); }
+.footer-bottom-bar { display:flex; align-items:center; gap:16px; padding:20px 0; color:rgba(255,255,255,.2); font:500 9px var(--mono); letter-spacing:.1em; }
+.footer-bottom-dot { color:var(--red); opacity:.55; font-size:12px; }

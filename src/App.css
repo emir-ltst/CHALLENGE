@@ -225,3 +225,15 @@ img { display:block; max-width:100%; }
 .pc-default .pc-cat-badge { position:absolute; left:0; bottom:0; border-top:var(--bh); border-right:var(--bh); }
 .pc-default .pc-body { padding:15px 16px 17px; display:flex; flex-direction:column; flex:1; }
 .pc-default .pc-title { margin:0 0 auto; font-family:var(--serif); font-size:19px; font-weight:700; letter-spacing:-.01em; line-height:1.15; color:var(--ink); padding-bottom:10px; padding-top:4px; }
+/* LARGE */
+.pc-large { display:flex; flex-direction:column; border:var(--bh); background:var(--white); transition:box-shadow .14s,transform .14s; }
+.pc-large:hover { box-shadow:var(--s2); transform:translate(-3px,-3px); }
+.pc-large-img-wrap {
+  position:relative;
+  display:block;
+  height:420px;          /* fixed so product photo crops correctly */
+  overflow:hidden;
+  background:var(--cream-dk);
+  border-bottom:var(--bh);
+  flex-shrink:0;
+}

@@ -19,6 +19,11 @@ export default function Navbar({ cartCount, favoriteCount }) {
           <span className="brand-wordmark">Tech<strong>Market</strong></span>
           <span className="brand-sticker">Y2K</span>
             </Link>
+
+            <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
+          <NavLink to="/products" onClick={() => setMenuOpen(false)}>Shop</NavLink>
+
+            </div>
           </nav>
 
       </header>

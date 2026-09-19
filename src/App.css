@@ -288,3 +288,7 @@ img { display:block; max-width:100%; }
 .why-panel-tall:hover { transform:translateY(20px) translate(-2px,-2px); }
 .why-panel-num { position:absolute; top:10px; right:13px; font:500 8px var(--mono); letter-spacing:.1em; color:var(--ink-40); }
 .why-panel-pink .why-panel-num,
+.why-panel-dark .why-panel-num { color:rgba(255,255,255,.3); }
+.why-panel strong { font-family:var(--serif); font-size:19px; font-weight:700; letter-spacing:-.01em; line-height:1.1; }
+.why-panel small { font-size:12px; line-height:1.55; color:var(--ink-70); }
+.why-panel-pink small,

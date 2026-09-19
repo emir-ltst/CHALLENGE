@@ -191,3 +191,13 @@ img { display:block; max-width:100%; }
 .bento-calc-inner .calculator-display { height:42px; margin-bottom:10px; }
 .bento-calc-inner .calculator-buttons { gap:4px; }
 .bento-calc-inner .calculator-buttons button { min-height:30px; font-size:11px; }
+
+/* ── FEATURED ── */
+.featured-v2 { position:relative; padding:96px 0; background:var(--off-white); border-top:var(--bxl); border-bottom:var(--bxl); overflow:hidden; }
+.featured-diagonal-bg { position:absolute; inset:0; background:var(--off-white); pointer-events:none; }
+.featured-inner { position:relative; z-index:1; }
+.featured-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:40px; padding-bottom:26px; border-bottom:var(--b); }
+.featured-editorial { display:grid; grid-template-columns:1.1fr .9fr; gap:3px; margin-bottom:3px; align-items:stretch; }
+.editorial-main { min-width:0; display:flex; flex-direction:column; }
+.editorial-stack { display:flex; flex-direction:column; gap:3px; min-width:0; }
+.featured-scroll-row { display:grid; grid-template-columns:repeat(4,1fr); gap:3px; }

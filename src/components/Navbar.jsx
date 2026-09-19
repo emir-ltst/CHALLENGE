@@ -29,7 +29,9 @@ export default function Navbar({ cartCount, favoriteCount }) {
           </nav>
 
           <div className="nav-actions">
-            
+          <Link className="icon-button" to="/products" aria-label="Search products">
+            <Search size={18} />
+          </Link>
           </div>
       </header>
   )

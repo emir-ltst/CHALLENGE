@@ -44,7 +44,7 @@ export default function Navbar({ cartCount, favoriteCount }) {
             <span>Account</span>
           </Link>
           <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
-            
+            {menuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
           </div>
           </nav>

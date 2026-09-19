@@ -119,3 +119,10 @@ img { display:block; max-width:100%; }
 .hero-stat-card strong { display:block; font-family:var(--serif); font-size:34px; font-weight:900; line-height:1; letter-spacing:-.02em; color:var(--ink); }
 .hero-stat-card span { display:block; font:500 8px var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-40); margin-top:4px; }
 .hero-stat-pink { background:var(--red); }
+.hero-stat-pink strong { color:var(--white); }
+.hero-stat-pink span  { color:rgba(255,255,255,.6); }
+.hero-stat-pink:hover { background:var(--red-dk); }
+.hero-stat-lime { background:var(--ink); }
+.hero-stat-lime strong { color:var(--white); }
+.hero-stat-lime span  { color:rgba(255,255,255,.45); }
+.hero-stat-lime:hover { background:var(--ink-90); }

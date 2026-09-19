@@ -24,7 +24,7 @@ export default function Navbar({ cartCount, favoriteCount }) {
           <NavLink to="/products" onClick={() => setMenuOpen(false)}>Shop</NavLink>
           <NavLink to="/products" onClick={() => setMenuOpen(false)}>New arrivals</NavLink>
           <NavLink to="/#why-us" onClick={() => setMenuOpen(false)}>About</NavLink>
-
+          <span className="nav-badge"><Zap size={10} /> SALE</span>
             </div>
           </nav>
 
